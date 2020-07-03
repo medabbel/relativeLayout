@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        card_view:cardCornerRadius="400dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="profile pic"
+            android:src="@drawable/profile"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardImg"
+        android:layout_centerHorizontal="true"
+        android:text="Utilisateur de l'application"
+        android:textColor="#101010"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/resumeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userTextView"
+
+        android:layout_marginLeft="10dp"
+        android:text="Resume"
+        android:textColor="#101010" />
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Nombre"
+        android:textColor="#101010" />
+
+    <TextView
+        android:id="@+id/rdvTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resumeTextView"
+        android:layout_marginLeft="10dp"
+        android:text="Rendez-vous"
+        android:textColor="#101010" />
+    <TextView
+        android:id="@+id/rdvValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="1"
+        android:textColor="#101010" />
+
+    <TextView
+        android:id="@+id/suivisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdvTextView"
+        android:layout_marginLeft="10dp"
+        android:text="Suivis"
+        android:textColor="#101010" />
+    <TextView
+        android:id="@+id/suivisValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdvValueTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="2"
+        android:textColor="#101010" />
+
+    <TextView
+        android:id="@+id/notificationsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suivisTextView"
+        android:layout_marginLeft="10dp"
+        android:text="Notifications"
+        android:textColor="#101010" />
+
+    <TextView
+        android:id="@+id/notificationsValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suivisValueTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="7"
+        android:textColor="#101010"/>
+
+    <RadioButton
+        android:id="@+id/rdvRadioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationsValueTextView"
+        android:layout_marginLeft="10dp"
+        android:text="Rendez-vous" />
+
+    <RadioButton
+        android:id="@+id/urgenceRadioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdvRadioBtn"
+        android:layout_marginLeft="10dp"
+        android:text="Urgence" />
+
+    <RadioButton
+        android:id="@+id/suiviRadioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urgenceRadioBtn"
+        android:layout_marginLeft="10dp"
+        android:text="Suivi" />
+
+    <ImageView
+        android:id="@+id/brandImgView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationsValueTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-95dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="brand pic"
+        android:src="@drawable/brand" />
+
+    <Button
+        android:id="@+id/annulerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brandImgView"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="80dp"
+        android:text="ANNULER" />
+
+    <Button
+        android:id="@+id/envoyerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brandImgView"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/annulerBtn"
+        android:text="ENVOYER" />
+
+
+</RelativeLayout>
